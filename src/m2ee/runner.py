@@ -233,8 +233,8 @@ class M2EERunner:
                 cmd,
                 close_fds=True,
                 stdin=subprocess.PIPE,
-                stdout=pipe_w,
-                stderr=pipe_w,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
                 cwd='/',
                 env=env,
             )
