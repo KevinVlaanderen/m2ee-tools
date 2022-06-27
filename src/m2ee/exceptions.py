@@ -38,5 +38,5 @@ class M2EEException(Exception):
             strlist.append("caused by: %s" % self.cause)
         strlist.append("errno: %s" % hex(self.errno))
         if self.output:
-            strlist.append("subprocess output available")
+            strlist.append(self.output)
         return ', '.join(strlist)
